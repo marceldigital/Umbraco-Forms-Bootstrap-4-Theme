@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Web.Mvc;
 
 namespace MarcelDigital.Umbraco.Bootstrap4FormsTheme.Extensions {
-    public class HtmlExtensions {
+    public static class HtmlExtensions {
         public static string ValidationClass(this HtmlHelper htmlHelper,
                                                 string fieldId,
                                                 string validClass = "",
