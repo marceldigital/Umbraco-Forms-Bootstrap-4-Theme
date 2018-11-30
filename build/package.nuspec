@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MarcelDigital.Umbraco.Bootstrap4FormsTheme</id>
+    <version>1.0.0-beta1</version>
+    <authors>Marcel Digital</authors>
+    <owners>Marcel Digital</owners>
+    <iconUrl>http://marceldigital.blob.core.windows.net/nuget/logo-64x64.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/marceldigital/Umbraco-Forms-Bootstrap-4-Theme</projectUrl>
+    <description>Bootstrap 4 themes for the Umbraco Forms plugin.</description>
+    <releaseNotes>
+      Initial Release.
+    </releaseNotes>
+    <copyright>Copyright ©2018 Marcel Digital</copyright>
+    <tags>Umbraco, Umbraco Forms, Bootstrap</tags>
+    <dependencies>
+      <dependency id="UmbracoForms" version="6.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="App_Plugins\**\*" target="App_Plugins" />
+    <file src="Views\**\*" target="Views" />
+  </files>
+</package>
