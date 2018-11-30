@@ -41,7 +41,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.CheckBox.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.CheckBoxList.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.DataConsent.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.DatePicker.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.DropDownList.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.FileUpload.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.PasswordField.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.RadioButtonList.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.Text.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.Textarea.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.Textfield.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\Script.cshtml" />
+    <None Include="App_Plugins\UmbracoFormsBootstrap4\Views\Web.config" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.CheckBox.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.CheckBoxList.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.DataConsent.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.DatePicker.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.DropDownList.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.FileUpload.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.PasswordField.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.RadioButtonList.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.Text.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.Textarea.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.Textfield.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\Form.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Horizontal\Script.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.CheckBox.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.CheckBoxList.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.DataConsent.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.DatePicker.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.DropDownList.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.FileUpload.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.PasswordField.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.RadioButtonList.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.Text.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.Textarea.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.Textfield.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\Form.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\Vertical\Script.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\UmbracoFormsBootstrap4\Scripts\validation-classes.js" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
