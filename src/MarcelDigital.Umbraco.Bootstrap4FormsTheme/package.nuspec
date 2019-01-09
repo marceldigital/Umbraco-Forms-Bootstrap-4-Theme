@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MarcelDigital.Umbraco.Bootstrap4FormsTheme</id>
+    <version>1.0.0</version>
+    <authors>Marcel Digital</authors>
+    <owners>Marcel Digital</owners>
+    <iconUrl>http://marceldigital.blob.core.windows.net/nuget/logo-64x64.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/marceldigital/Umbraco-Forms-Bootstrap-4-Theme</projectUrl>
+    <description>
+      Bootstrap 4 themes for the Umbraco Forms plugin. Adds two new themes avaliable to Umbraco Forms to create forms with horizontal or vertical form labels. Both unobtrusive and server side validation supported.
+    </description>
+    <releaseNotes>
+      Initial Release.
+    </releaseNotes>
+    <copyright>Copyright ©2019 Marcel Digital</copyright>
+    <tags>Umbraco, Umbraco Forms, Bootstrap</tags>
+    <dependencies>
+      <dependency id="UmbracoForms" version="6.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Content\**\*" target="content" />
+  </files>
+</package>
