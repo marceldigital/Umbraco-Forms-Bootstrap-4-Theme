@@ -9,18 +9,20 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/marceldigital/Umbraco-Forms-Bootstrap-4-Theme</projectUrl>
-    <description>Bootstrap 4 themes for the Umbraco Forms plugin. Adds two new themes avaliable to Umbraco Forms to create forms with horizontal or vertical form labels. Both unobtrusive and server side validation supported.</description>
+    <description>
+      Bootstrap 4 themes for the Umbraco Forms plugin. Adds two new themes avaliable to Umbraco Forms to create forms with horizontal 
+      or vertical form labels. Both unobtrusive and server side validation supported.
+    </description>
     <releaseNotes>
       Initial Release.
     </releaseNotes>
-    <copyright>Copyright ©2018 Marcel Digital</copyright>
+    <copyright>Copyright ©2019 Marcel Digital</copyright>
     <tags>Umbraco, Umbraco Forms, Bootstrap</tags>
     <dependencies>
       <dependency id="UmbracoForms" version="6.0.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="App_Plugins\**\*" target="content" />
-    <file src="Views\**\*" target="content" />
+    <file src="Content\**\*" target="content" />
   </files>
 </package>
