@@ -275,7 +275,7 @@
     <None Include="Content\Views\Partials\Forms\Themes\Vertical\Script.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\App_Plugins\UmbracoFormsBootstrap4\Scripts\validation-classes.js" />
+    <None Include="Content\App_Plugins\UmbracoFormsBootstrap4\Scripts\validation-classes.js" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
