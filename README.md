@@ -1,4 +1,6 @@
 # Umbraco Forms Bootstrap 4 Theme
+[![](https://img.shields.io/nuget/v/MarcelDigital.Umbraco.Bootstrap4FormsTheme.svg)](https://www.nuget.org/packages/MarcelDigital.Umbraco.Bootstrap4FormsTheme)
+
 This package adds Bootstrap 4 themes for the Umbraco Forms plugin. Included are two new themes avaliable to Umbraco Forms package to create forms with horizontal or vertical form labels. Both unobtrusive and server side validation supported.
 
 ## Installation
