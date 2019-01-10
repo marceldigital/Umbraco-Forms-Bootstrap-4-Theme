@@ -17,17 +17,17 @@ If you are using NuGet for all your dependencies, Bootstrap 4 is also avaliable 
 ## Included Themes
 This package adds the following themes to the list of avaliable options when inserting an Umbraco Form.
 
-![Theme Picking](docs/img/theme-picking-screenshot.png)
+![Theme Picking](https://github.com/marceldigital/Umbraco-Forms-Bootstrap-4-Theme/raw/master/docs/img/theme-picking-screenshot.PNG)
 
 ### Horizontal
 This theme places the labels to the left of the form fields and creates a 2 column layout.
 
-![Horizontal Theme](docs/img/horizontal-form-screenshot.png)
+![Horizontal Theme](https://github.com/marceldigital/Umbraco-Forms-Bootstrap-4-Theme/raw/master/docs/img/horizontal-form-screenshot.PNG)
 
 ### Vertical
 This theme places the labels above the form fields stacking all of the elements.
 
-![Vertical Theme](docs/img/vertical-form-screenshot.png)
+![Vertical Theme](https://github.com/marceldigital/Umbraco-Forms-Bootstrap-4-Theme/raw/master/docs/img/vertical-form-screenshot.PNG)
 
 ## Supported Field Types
 - Checkbox
