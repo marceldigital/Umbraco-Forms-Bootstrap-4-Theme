@@ -153,6 +153,7 @@
     <Reference Include="System.Threading.Tasks.Dataflow, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Threading.Tasks.Dataflow.4.7.0\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -228,6 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\HtmlExtensions.cs" />
+    <Compile Include="Fields\Range.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +247,9 @@
     <None Include="Content\App_Plugins\UmbracoFormsBootstrap4\Views\FieldTypes\FieldType.Textfield.cshtml" />
     <None Include="Content\App_Plugins\UmbracoFormsBootstrap4\Views\Script.cshtml" />
     <None Include="Content\App_Plugins\UmbracoFormsBootstrap4\Views\Web.config" />
+    <None Include="Content\Views\Partials\Forms\Themes\default\FieldTypes\FieldType.Range.cshtml" />
+    <None Include="Content\Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.Range.cshtml" />
+    <None Include="Content\Views\Partials\Forms\Themes\Vertical\FieldTypes\FieldType.Range.cshtml" />
     <None Include="package.nuspec" />
     <None Include="packages.config" />
     <None Include="Content\Views\Partials\Forms\Themes\Horizontal\FieldTypes\FieldType.CheckBox.cshtml" />
@@ -276,6 +281,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\App_Plugins\UmbracoFormsBootstrap4\Scripts\validation-classes.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\range.html" />
+    <Content Include="Content\App_Plugins\UmbracoForms\Backoffice\Common\SettingTypes\decimal.html" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
