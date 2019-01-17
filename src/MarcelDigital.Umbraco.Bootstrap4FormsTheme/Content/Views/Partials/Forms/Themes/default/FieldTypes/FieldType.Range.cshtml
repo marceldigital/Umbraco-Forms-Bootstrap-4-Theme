@@ -4,7 +4,7 @@
 <input type="range"
        name="@Model.Name"
        id="@Model.Id"
-       class="@ViewData["RangeCssClass"] range @Html.ValidationClass(Model.Id)"
+       class="@Html.GetFormFieldClass(Model.FieldTypeName) range @Html.ValidationClass(Model.Id)"
        value="@Model.ValueAsHtmlString"
        min="@(Model.AdditionalSettings.ContainsKey("Min") ? Model.AdditionalSettings["Min"] : null)"
        max="@(Model.AdditionalSettings.ContainsKey("Max") ? Model.AdditionalSettings["Max"] : null)"
