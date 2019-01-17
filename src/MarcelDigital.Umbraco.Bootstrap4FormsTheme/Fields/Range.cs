@@ -43,21 +43,5 @@ namespace MarcelDigital.Umbraco.Bootstrap4FormsTheme.Fields {
         /// </summary>
         [Setting("Default Value", alias = "defaultValue", description = "The default value of the range.", view = "decimal")]
         public string DefaultValue { get; set; }
-
-        /// <summary>
-        ///     Custom validation override to ensure that the value that is submitted is a number or decimal.
-        /// </summary>
-        public override IEnumerable<string> ValidateField(Form form, Field field, IEnumerable<object> postedValues, HttpContextBase context) {
-            var returnStrings = new List<string>();
-
-            if (postedValues.Any(value => !double.TryParse(value.ToString(), out double result))) {
-                returnStrings.Add("The value must be a number or decimal.");
-            }
-
-            // Also validate it against the original default method.
-            returnStrings.AddRange(base.ValidateField(form, field, postedValues, context));
-
-            return returnStrings;
-        }
     }
 }
