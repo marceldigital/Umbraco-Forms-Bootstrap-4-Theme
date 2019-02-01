@@ -1,10 +1,10 @@
 @model Umbraco.Forms.Mvc.Models.FieldViewModel
 @using Umbraco.Forms.Mvc
 
-<div class="custom-control custom-checkbox">
+<div class="custom-control @Html.GetFormFieldClass(Model.FieldTypeName)">
     <input type="checkbox" name="@Model.Name" id="@Model.Id"
            class="custom-control-input @Html.ValidationClass(Model.Id)"
-           @if (Model.Mandatory) { <text> data-val="true" data-val-requiredcb="@Model.RequiredErrorMessage" </text> }
-           @if (Model.ContainsValue(true) || Model.ContainsValue("true") || Model.ContainsValue("on")) { <text> checked="checked" </text> } />
+           @if (Model.Mandatory) { <text> data-val="true" data-val-requiredcb="@Model.RequiredErrorMessage" </text>  }
+           @if (Model.ContainsValue(true) || Model.ContainsValue("true") || Model.ContainsValue("on")) { <text> checked="checked" </text>  } />
     <label class="custom-control-label" for="@Model.Name">&nbsp;</label>
 </div>
