@@ -14,6 +14,15 @@ You will also need to have Bootstrap 4 included in your website to style the for
 
 If you are using NuGet for all your dependencies, Bootstrap 4 is also avaliable as a package to install in your project. See the appendix for details.
 
+*Note:* If you are planning on using client side validation (unobtrusive validation) you must use the latest jQuery validate and unobtrusive javascript libraries. 
+The libraries which are a part of the [Umbraco Forms tutorial](https://our.umbraco.com/documentation/Add-ons/UmbracoForms/Developer/Prepping-Frontend/) will not work with version 3.X.X of jQuery due to some methods being deprecated and removed.
+Instead use the latest from the [Microsoft CDN](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview).
+
+```javascript
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+```
+
 ## Included Themes
 This package adds the following themes to the list of avaliable options when inserting an Umbraco Form.
 
