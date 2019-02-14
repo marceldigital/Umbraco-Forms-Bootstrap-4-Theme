@@ -39,7 +39,7 @@ namespace MarcelDigital.Umbraco.Bootstrap4FormsTheme.Fields {
         public string Step { get; set; }
 
         /// <summary>
-        ///     The defalut value for the range.
+        ///     The default value for the range.
         /// </summary>
         [Setting("Default Value", alias = "defaultValue", description = "The default value of the range.", view = "decimal")]
         public string DefaultValue { get; set; }
