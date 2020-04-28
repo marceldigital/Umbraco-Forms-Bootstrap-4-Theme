@@ -1,3 +1,10 @@
 @model Umbraco.Forms.Mvc.Models.FieldViewModel
+@using MarcelDigital.Umbraco.Bootstrap4FormsTheme.Extensions
 
-@Html.Partial("~/App_Plugins/UmbracoFormsBootstrap4/Views/FieldTypes/FieldType.CheckBox.cshtml", Model)
+<div class="custom-control custom-checkbox">
+    <input type="checkbox" name="@Model.Name" id="@Model.Id"
+           class="custom-control-input @Html.ValidationClass(Model.Id)"
+           @if (Model.Mandatory) { <text> data-val="true" data-val-requiredcb="@Model.RequiredErrorMessage" </text> }
+           @if (Model.ContainsValue(true) || Model.ContainsValue("true") || Model.ContainsValue("on")) { <text> checked="checked" </text> } />
+    <label class="custom-control-label" for="@Model.Name">@Model.Caption</label>
+</div>
