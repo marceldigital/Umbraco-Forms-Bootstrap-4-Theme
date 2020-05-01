@@ -43,20 +43,20 @@
                     {
                         bool hidden = f.HasCondition && f.ConditionActionType == FieldConditionActionType.Show;
 
-                        <div class="@Html.GetFormFieldWrapperClass(f.FieldTypeName) @f.CssClass row" @{ if (hidden) { <text> style="display: none" </text>  } }>
+                    <div class="@Html.GetFormFieldWrapperClass(f.FieldTypeName) @f.CssClass row" @{ if (hidden) { <text> style="display: none" </text>  } }>
 
-                            @if (!f.HideLabel)
-                            {
-                                <label for="@f.Id" class="umbraco-forms-label col-sm-2 col-form-label">
-                                    @f.Caption 
-                                    @if (f.ShowIndicator)
-                                    {
-                                        <span class="umbracoForms-Indicator">@Model.Indicator</span>
-                                    }
-                                </label>
-                            }
+                        @if (!f.HideLabel && f.FieldTypeName != "Checkbox")
+                        {
+                            <label for="@f.Id" class="umbraco-forms-label col-sm-2 col-form-label">
+                                @f.Caption
+                                @if (f.ShowIndicator)
+                                {
+                                    <span class="umbracoForms-Indicator">@Model.Indicator</span>
+                                }
+                            </label>
+                        }
 
-                            <div class="umbraco-forms-field-wrapper col-sm-10">
+                            <div class="umbraco-forms-field-wrapper col-sm-10 @(f.FieldTypeName == "Checkbox" ? "offset-sm-2" : null)">
 
                                 @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
 
@@ -72,7 +72,7 @@
                             </div>
 
 
-                        </div>
+                    </div>
                     }
 
                 </div>
