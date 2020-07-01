@@ -1,17 +1,11 @@
 @model Umbraco.Forms.Mvc.Models.FieldViewModel
-@using Umbraco.Forms.Mvc
+@{
+    var acceptCopy = string.Empty;
+    Model.AdditionalSettings.TryGetValue("AcceptCopy", out acceptCopy);
+}
+<input type="checkbox" name="@Model.Id" id="@Model.Id" value="true" class="custom-control custom-checkbox"
+       @if (Model.Mandatory) { <text> data-rule-required="true" data-val="true" data-msg-required="@Model.RequiredErrorMessage" </text> }
+       @if (Model.ContainsValue(true) || Model.ContainsValue("true") || Model.ContainsValue("on")) { <text> checked="checked" </text> } />
+<input type="hidden" name="@Model.Id" value="false" />
 
-<div class="radiobuttonlist dataconsent" id="@Model.Id">
-    <div class="custom-control custom-radio">
-        <input type="radio" name="@Model.Id" id="@string.Concat(Model.Id, "_Accept")" value="accepted" class="custom-control-input @Html.ValidationClass(Model.Id)"
-               @if (Model.Mandatory) { <text> data-val="true" data-val-requiredlist="@Model.RequiredErrorMessage" </text> }
-               @if (Model.ContainsValue("accepted")) { <text> checked="checked" </text> } />
-        <label for="@string.Concat(Model.Id, "_Accept")" class="custom-control-label">@Model.AdditionalSettings["AcceptCopy"]</label>
-    </div>
-    <div class="custom-control custom-radio">
-        <input type="radio" name="@Model.Id" id="@string.Concat(Model.Id, "_Decline")" value="declined" class="custom-control-input @Html.ValidationClass(Model.Id)"
-               @if (Model.Mandatory) { <text> data-val="true" data-val-requiredlist="@Model.RequiredErrorMessage" </text> }
-               @if (Model.ContainsValue("declined")) { <text> checked="checked" </text> } />
-        <label for="@string.Concat(Model.Id, "_Decline")" class="custom-control-label">@Model.AdditionalSettings["DeclineCopy"]</label>
-    </div>
-</div>
+<label for="@Model.Id">@acceptCopy</label>

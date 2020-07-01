@@ -1,6 +1,5 @@
 @model Umbraco.Forms.Mvc.Models.FieldViewModel
 @using Umbraco.Forms.Core.Extensions
-@using Umbraco.Forms.Mvc
 
 @{
     var settings = Model.AdditionalSettings;
@@ -9,12 +8,10 @@
 }
 
 <div id="@Model.Id">
-    @if (hasCaption)
-    {
+    @if (hasCaption) {
         <h2>@settings["Caption"].ParsePlaceHolders()</h2>
     }
-    @if (hasBody)
-    {
+    @if (hasBody) {
         <p>@Html.Raw(settings["BodyText"].ParsePlaceHolders().Replace(System.Environment.NewLine, "<br />"))</p>
     }
 </div>
